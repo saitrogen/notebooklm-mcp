@@ -30,6 +30,8 @@ ENV/
 .vscode/
 *.swp
 *.swo
+.github/agents/*.agent.md
+.github/skills/
 
 # Testing
 .pytest_cache/
@@ -57,3 +59,4 @@ CLAUDE.local.md
 .worktrees/
 .claude/
 run*
+
