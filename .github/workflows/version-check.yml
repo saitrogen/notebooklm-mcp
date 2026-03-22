@@ -28,7 +28,7 @@ jobs:
           TOML_VERSION=$(grep '^version = ' pyproject.toml | head -1 | sed 's/version = "\(.*\)"/\1/')
 
           # Extract version from __init__.py
-          INIT_VERSION=$(grep '__version__' src/notebooklm_tools/__init__.py | sed 's/__version__ = "\(.*\)"/\1/')
+          INIT_VERSION=$(grep '^__version__' src/notebooklm_tools/__init__.py | head -1 | sed 's/__version__ = "\(.*\)"/\1/')
 
           # Extract version from SKILL.md (YAML frontmatter)
           SKILL_VERSION=$(grep '^version:' src/notebooklm_tools/data/SKILL.md | head -1 | sed 's/version: "\(.*\)"/\1/')
