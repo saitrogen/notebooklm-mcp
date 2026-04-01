@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.14] - 2026-04-01
+
+### Fixed
+- **Research Start Dead Parameter (Issue #123)** — Fixed a bug where `nlm research start "query" --title "My Title"` (and the corresponding MCP tool parameter `title`) failed because the internal logic did not automatically trigger new notebook creation when `title` was provided without a `notebook_id`.
+
 ## [0.5.13] - 2026-03-31
 
 ### Fixed
